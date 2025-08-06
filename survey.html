@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Preference</title>
+    <link rel="stylesheet" href="style_survey.css">
+  </head>
+
+  <body>
+    <h1 id="title">Gaming Preferences Survey</h1>
+    <p id="description">Tell us about what kind of game do you like?</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name-label">Enter Your Name:<input required type="text" placeholder="James Bond"></label>
+        <label for="email-label">Enter Your Email:<input required type="email" placeholder="username@gmail.com"></label>
+        <label for="number-label">Enter Your Age:<input required type="number" min="13" max="120" placeholder="25"></label><hr>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What is your favorite genre?</label>
+        <select required id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Action</option>
+          <option value="2">Strategic</option>
+          <option value="3">Adventure</option>
+          <option value="4">Open World</option><hr>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>How often do you play?</legend>
+          <label for="daily"><input checked class="inline" class="inline" name="time" type="radio" value="daily">Daily </label>
+          <label for="weekly"><input class="inline" class="inline" name="time" type="radio" value="weekly">Weekly </label>
+          <label for="ocassionaly"><input class="inline" class="inline" name="time" type="radio" value="ocassionaly">Ocassionaly </label>
+          <label for="rarely"><input class="inline" class="inline" name="time" type="radio" value="rarely">Rarely </label><hr>
+      </fieldset>
+      <fieldset>
+        <legend>What are your top games?</legend>
+        <label for="gta"><input checked class="inline" type="checkbox" name="games" value="gtaV" /> GTA V</label>
+        <label for="cs"><input class="inline" type="checkbox" name="games" value="Counter-Strike"/> Counter Strike</label>
+        <label for="pubg"><input class="inline" type="checkbox" name="games" value="Pubg" /> Pubg</label>
+        <label for="fifa"><input class="inline" type="checkbox" name="games" value="Fifa"/> Fifa</label>
+        <label for="nba"><input class="inline" type="checkbox" name="games" value="NBA 2k"/> NBA 2k</label>
+        <label for="others"><input class="inline" type="checkbox" name="games" value="others"/> Others</label><hr>
+
+        <label>What kind of game would you like to play in future?<textarea placeholder="I would like to play..."></textarea></label><hr>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
